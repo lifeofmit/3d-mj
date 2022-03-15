@@ -1,0 +1,129 @@
+<!--
+  Message from Brad:
+  Thanks for watching CSS3 in 30 Days! You're awesome.
+  Want more fun design & coding courses? Check out my website.
+
+  https://codecollege.ca
+  (it's free to start)
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3D Layers | Mit Joshi</title>
+
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="../_theme-styles/normalize.css">
+
+    <!-- PROJECT THEME CSS -->
+    <link rel="stylesheet" href="../_theme-styles/theme.css">
+
+    <!-- FINAL PROJECT CSS (use for reference) -->
+    <link rel="stylesheet" href="final.css">
+
+    <!-- SANDBOX CSS (this is your file!) -->
+    <link rel="stylesheet" href="sandbox.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
+
+
+    <style>
+        .final__layers {
+    position: relative;
+    min-height: 360px;
+    max-width: 360px;
+  }
+  
+  .final__layers img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    transition: all ease 3000ms;
+    transform-style: preserve-3d;
+  }
+
+  .final__layers img.back {
+    opacity: 0;
+  }
+
+  .final__layers img.top {
+    opacity: 0.9;
+  }
+
+  .final__layers:hover img {
+    margin-top: 30%;
+    height: 140%;
+  margin-left: 10%;
+  transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(180px); 
+  opacity: 0.6;
+  }
+
+  .final__layers:hover img.top {
+  transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(280px);
+  }
+ 
+    </style>
+
+  </head>
+  <body>
+    
+
+
+
+    <div class="sandbox">
+      
+      <div class="content">
+
+        
+
+        <section>
+
+         
+
+          <div class="layers">
+            <!-- UNCOMMENT THIS
+            <img src="img/back.svg" alt="back layer" class="back">
+            <img src="img/mid.svg" alt="mid layer" class="mid">
+            <img src="img/top.svg" alt="top layer" class="top">
+            <img src="img/tippytop.svg" alt="tippy top layer" class="tippy">
+            -->
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+
+    <div class="final-result">
+        
+        <div class="content">
+
+          <section>
+
+            <div class="final__layers">
+              <img src="one.png" alt="back layer" class="back">
+              
+              <img src="two.png" alt="top layer" class="top">
+            
+            </div>
+
+          </section>
+
+        </div>
+    </div>
+
+    <footer>
+      
+      <div class="made-by">
+        Made by <a href="http://www.mitjoshi.com/">Mit Joshi</a>
+      </div>
+      <div class="course">
+        <a href="http://www.mitjoshi.com/">Portfolio</a>
+      </div>
+      <div class="copyright">
+        &copy;2022
+      </div>
+    </footer>
+  </body>
+</html>
