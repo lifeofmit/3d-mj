@@ -35,6 +35,15 @@
     min-height: 360px;
     max-width: 360px;
   }
+      .final__layers::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.final__layers {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
   
   .final__layers img {
     position: absolute;
@@ -66,6 +75,7 @@
   @media only screen and (max-width: 600px) {
     .final__layers {
     position: relative;
+    text-align: left;
     min-height: 200px;
     max-width: 200px;
     
