@@ -30,9 +30,17 @@
 
     <style>
       
-      body {
-  overflow: hidden; /* Hide scrollbars */
+      /* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
 }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+      
         .final__layers {
     position: relative;
     text-align: center;
