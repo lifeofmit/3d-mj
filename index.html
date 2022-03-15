@@ -29,21 +29,17 @@
 
 
     <style>
+      
+      body {
+  overflow: hidden; /* Hide scrollbars */
+}
         .final__layers {
     position: relative;
     text-align: center;
     min-height: 360px;
     max-width: 360px;
   }
-      .final__layers::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.final__layers {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+ 
   
   .final__layers img {
     position: absolute;
@@ -72,21 +68,6 @@
   transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(250px);
   }
   
-  @media only screen and (max-width: 600px) {
-    .final__layers {
-    position: relative;
-    text-align: left;
-    min-height: 200px;
-    max-width: 200px;
-    
-  }
-    .final__layers:hover img {
-    margin-top: 50%;
-    margin-left: 20%;
-    height: 120%;
-  transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(180px); 
-  opacity: 0.6;
-  }
  
     </style>
 
